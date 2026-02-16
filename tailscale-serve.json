@@ -1,0 +1,16 @@
+{
+  "TCP": {
+    "443": {
+      "HTTPS": true
+    }
+  },
+  "Web": {
+    "${TS_CERT_DOMAIN}": {
+      "Handlers": {
+        "/": {
+          "Proxy": "http://openclaw:18789"
+        }
+      }
+    }
+  }
+}
